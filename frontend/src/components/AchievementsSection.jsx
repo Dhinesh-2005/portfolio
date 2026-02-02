@@ -3,10 +3,13 @@ import { motion } from 'framer-motion';
 import { Trophy, Medal, Star } from 'lucide-react';
 import { achievementsData } from '../data/mockData';
 
-const iconMap = {
-  Trophy,
-  Medal,
-  Star
+const getIcon = (iconName) => {
+  const icons = {
+    Trophy: Trophy,
+    Medal: Medal,
+    Star: Star
+  };
+  return icons[iconName] || Trophy;
 };
 
 const AchievementsSection = () => {
