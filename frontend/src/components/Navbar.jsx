@@ -77,9 +77,10 @@ const Navbar = () => {
     <AnimatePresence>
       {isMobileMenuOpen && (
         <motion.div
-          initial={{ opacity: 0, x: -10 }}
+          initial={{ opacity: 0, x: '100%' }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -10 }}
+          exit={{ opacity: 0, x: '100%' }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
           className="fixed top-16 right-0 w-full z-[9999] md:hidden bg-[#0a0a0b] border-b border-white/10"
         >
           <div className="px-4 py-4 space-y-3">
