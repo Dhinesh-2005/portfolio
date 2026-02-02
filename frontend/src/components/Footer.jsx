@@ -1,0 +1,92 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Github, Linkedin, Instagram, Heart, ArrowUp, Download } from 'lucide-react';
+import { profileData } from '../data/mockData';
+import { Button } from './ui/button';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const socialLinks = [
+    { icon: Github, href: profileData.social.github, label: 'GitHub' },
+    { icon: Linkedin, href: profileData.social.linkedin, label: 'LinkedIn' },
+    { icon: Instagram, href: profileData.social.instagram, label: 'Instagram' }
+  ];
+
+  return (
+    <footer className="relative py-12 border-t border-white/10">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col items-center">
+          {/* Logo */}
+          <motion.a
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToTop();
+            }}
+            className="text-2xl font-bold text-white mb-6"
+            whileHover={{ scale: 1.05 }}
+          >
+            <span className="text-teal-400">S</span>abari
+          </motion.a>
+
+          {/* Resume Button */}
+          <Button
+            variant="outline"
+            size="sm"
+            className="mb-6 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400"
+            onClick={() => window.open(profileData.resumeUrl, '_blank')}
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Download Resume
+          </Button>
+
+          {/* Social Links */}
+          <div className="flex gap-4 mb-8">
+            {socialLinks.map((social) => (
+              <motion.a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
+                className="p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-teal-400/50 transition-all"
+                aria-label={social.label}
+              >
+                <social.icon className="w-5 h-5" />
+              </motion.a>
+            ))}
+          </div>
+
+          {/* Copyright */}
+          <p className="text-gray-500 text-sm text-center flex items-center gap-1">
+            © {currentYear} {profileData.name}. Made with
+            <Heart className="w-4 h-4 text-teal-400 inline-block mx-1" fill="currentColor" />
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+      <motion.button
+        onClick={scrollToTop}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        whileHover={{ y: -5, transition: { duration: 0.2 } }}
+        className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-500/30 hover:bg-teal-600 transition-colors z-50"
+        aria-label="Scroll to top"
+      >
+        <ArrowUp className="w-5 h-5" />
+      </motion.button>
+    </footer>
+  );
+};
+
+export default Footer;
