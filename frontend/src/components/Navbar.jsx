@@ -32,7 +32,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0a0a0b]/90 backdrop-blur-lg border-b border-white/10'
+          ? 'bg-[#0a0a0b]/95 backdrop-blur-lg border-b border-white/10'
           : 'bg-transparent'
       }`}
     >
@@ -45,7 +45,7 @@ const Navbar = () => {
             className="text-xl md:text-2xl font-bold text-white"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-teal-400">S</span>abari
+            <span className="text-red-600">S</span>abari
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -55,7 +55,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-gray-300 hover:text-teal-400 transition-colors text-sm font-medium"
+                className="text-gray-300 hover:text-red-500 transition-colors text-sm font-medium"
                 whileHover={{ y: -2 }}
               >
                 {link.name}
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Button
               variant="outline"
               size="sm"
-              className="border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400"
+              className="border-red-600/50 text-red-500 hover:bg-red-600/10 hover:border-red-600"
               onClick={() => window.open(profileData.resumeUrl, '_blank')}
             >
               <Download className="w-4 h-4 mr-2" />
@@ -89,7 +89,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0a0a0b]/95 backdrop-blur-lg border-b border-white/10"
+            className="md:hidden bg-[#0a0a0b]/98 backdrop-blur-lg border-b border-white/10"
           >
             <div className="px-4 py-4 space-y-3">
               {navLinks.map((link) => (
@@ -97,7 +97,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="block text-gray-300 hover:text-teal-400 transition-colors py-2 text-base"
+                  className="block text-gray-300 hover:text-red-500 transition-colors py-2 text-base"
                   whileHover={{ x: 10 }}
                 >
                   {link.name}
@@ -106,7 +106,7 @@ const Navbar = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="w-full border-teal-400/50 text-teal-400 hover:bg-teal-400/10 mt-4"
+                className="w-full border-red-600/50 text-red-500 hover:bg-red-600/10 mt-4"
                 onClick={() => window.open(profileData.resumeUrl, '_blank')}
               >
                 <Download className="w-4 h-4 mr-2" />

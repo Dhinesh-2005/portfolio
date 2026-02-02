@@ -38,10 +38,10 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            About <span className="text-teal-400">Me</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+            About <span className="text-red-600">Me</span>
           </h2>
-          <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-red-700 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -84,10 +84,10 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.4 }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="p-5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-teal-400/30 transition-colors duration-300"
+                className="p-5 rounded-xl bg-[#141414] border border-white/10 hover:border-red-700/40 transition-all duration-300 shadow-lg shadow-black/20"
               >
-                <div className="w-12 h-12 rounded-lg bg-teal-400/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-teal-400" />
+                <div className="w-12 h-12 rounded-lg bg-red-700/10 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-red-500" />
                 </div>
                 <h3 className="text-white font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
