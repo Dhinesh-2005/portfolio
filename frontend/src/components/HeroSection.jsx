@@ -155,7 +155,7 @@ const HeroSection = () => {
               
               {/* Image container */}
               <div className="relative w-[280px] h-[280px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-red-700/20 shadow-2xl shadow-red-900/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-700/20 to-transparent" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-700/20 to-transparent" />
                 <img
                   src={profileData.profileImage}
                   alt={profileData.name}
