@@ -24,10 +24,10 @@ const AchievementsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            <span className="text-teal-400">Achievements</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+            <span className="text-red-600">Achievements</span>
           </h2>
-          <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-red-700 mx-auto rounded-full" />
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
             Recognition and accomplishments along my journey
           </p>
@@ -44,19 +44,19 @@ const AchievementsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15, duration: 0.5 }}
-                whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                className="group relative p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-teal-400/30 transition-all duration-300 text-center overflow-hidden"
+                whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                className="group relative p-6 rounded-xl bg-[#141414] border border-white/10 hover:border-red-700/40 transition-all duration-300 text-center overflow-hidden shadow-lg shadow-black/20"
               >
                 {/* Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-teal-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-700/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 
                 {/* Icon */}
-                <div className="relative w-16 h-16 mx-auto rounded-full bg-teal-400/10 flex items-center justify-center mb-4 group-hover:bg-teal-400/20 transition-colors">
-                  {IconComponent && <IconComponent className="w-8 h-8 text-teal-400" />}
+                <div className="relative w-16 h-16 mx-auto rounded-full bg-red-700/10 flex items-center justify-center mb-4 group-hover:bg-red-700/20 transition-colors">
+                  {IconComponent && <IconComponent className="w-8 h-8 text-red-500" />}
                 </div>
 
                 {/* Content */}
-                <h3 className="relative text-lg font-semibold text-white mb-3 group-hover:text-teal-400 transition-colors">
+                <h3 className="relative text-lg font-semibold text-white mb-3 group-hover:text-red-400 transition-colors">
                   {achievement.title}
                 </h3>
                 <p className="relative text-gray-400 text-sm leading-relaxed">
