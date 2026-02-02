@@ -30,7 +30,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 pointer-events-auto ${
         isScrolled
           ? 'bg-[#0a0a0b]/95 backdrop-blur-lg border-b border-white/10'
           : 'bg-transparent'
@@ -89,7 +89,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0a0a0b]/98 backdrop-blur-lg border-b border-white/10"
+            className="md:hidden bg-[#0a0a0b]/98 backdrop-blur-lg border-b border-white/10 pointer-events-auto"
           >
             <div className="px-4 py-4 space-y-3">
               {navLinks.map((link) => (
