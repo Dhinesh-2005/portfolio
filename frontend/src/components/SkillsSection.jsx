@@ -3,13 +3,16 @@ import { motion } from 'framer-motion';
 import { MessageSquare, Users, Lightbulb, RefreshCw, Clock, Brain } from 'lucide-react';
 import { skillsData } from '../data/mockData';
 
-const iconMap = {
-  MessageSquare,
-  Users,
-  Lightbulb,
-  RefreshCw,
-  Clock,
-  Brain
+const getIcon = (iconName) => {
+  const icons = {
+    MessageSquare: MessageSquare,
+    Users: Users,
+    Lightbulb: Lightbulb,
+    RefreshCw: RefreshCw,
+    Clock: Clock,
+    Brain: Brain
+  };
+  return icons[iconName] || MessageSquare;
 };
 
 const SkillsSection = () => {
