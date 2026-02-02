@@ -80,7 +80,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="fixed top-16 left-0 right-0 z-[9999] md:hidden bg-[#0a0a0b]/98 border-b border-white/10"
+          className="fixed top-16 right-0 w-full z-[9999] md:hidden bg-[#0a0a0b] border-b border-white/10"
         >
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
@@ -88,7 +88,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="block text-gray-300 py-2"
+                className="block text-gray-300 hover:text-red-500 py-2"
               >
                 {link.name}
               </a>
