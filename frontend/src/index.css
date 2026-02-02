@@ -119,6 +119,9 @@ nav {
   z-index: 9999;
 }
 section {
+    scroll-margin-top: 90px;
   position: relative;
   z-index: 1;
 }
+
+
