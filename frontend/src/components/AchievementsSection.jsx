@@ -36,7 +36,7 @@ const AchievementsSection = () => {
         {/* Achievements Grid */}
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {achievementsData.map((achievement, index) => {
-            const IconComponent = iconMap[achievement.icon];
+            const IconComponent = getIcon(achievement.icon);
             return (
               <motion.div
                 key={achievement.id}
