@@ -91,7 +91,7 @@ const SkillsSection = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {skillsData.soft.map((skill, index) => {
-                const IconComponent = iconMap[skill.icon];
+                const IconComponent = getIcon(skill.icon);
                 return (
                   <motion.div
                     key={skill.name}
