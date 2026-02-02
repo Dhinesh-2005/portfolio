@@ -34,7 +34,7 @@ const Footer = () => {
             className="text-2xl font-bold text-white mb-6"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-red-600">S</span>abari
+            <span className="text-red-600">D</span>hinesh
           </motion.a>
 
           {/* Resume Button */}
@@ -67,8 +67,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-gray-500 text-sm text-center flex items-center gap-1">
-            © {currentYear} {profileData.name}. Made with
-            <Heart className="w-4 h-4 text-red-600 inline-block mx-1" fill="currentColor" />
+            © 2026 
             All rights reserved.
           </p>
         </div>

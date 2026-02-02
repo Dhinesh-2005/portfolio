@@ -1,19 +1,19 @@
 // Mock data for portfolio - will be replaced with backend API later
 
 export const profileData = {
-  name: "SABARINATHA M",
+  name: "DHINESH P",
   role: "B.Tech Information Technology Student",
   college: "St. Peter's College of Engineering and Technology",
   summary: "Passionate IT student with a keen interest in software development, testing, and emerging technologies. Eager to learn and contribute to innovative projects.",
-  email: "sabarinathan@example.com",
-  phone: "+91 9876543210",
+  email: "prakashdinesh09@gmail.com",
+  phone: "+91 9941796400",
   location: "Tamil Nadu, India",
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-  resumeUrl: "/resume.pdf",
+  profileImage: "/photos/dinesh.jpeg",
+  resumeUrl: "/resume/cv.pdf",
   social: {
-    instagram: "https://www.instagram.com/ur_sabari?igsh=MWh6cTE3cGVvbHR0aw==",
-    linkedin: "https://www.linkedin.com/in/sabarinathanmanohar",
-    github: "https://github.com/Sabarinathan-git"
+    instagram: "https://www.instagram.com/dhinesh___07_?igsh=MWs5dzAwamYzNjZwZA==",
+    linkedin: "https://www.linkedin.com/in/dhinesh-p-51575229b",
+    github: "https://github.com/Dhinesh-2005"
   }
 };
 
@@ -28,19 +28,20 @@ export const aboutData = {
 
 export const skillsData = {
   technical: [
-    { name: "HTML/CSS", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "React.js", level: 80 },
+    { name: "HTML/CSS", level: 80 },
+    { name: "JavaScript", level:70},
+    { name: "React.js", level: 70 },
     { name: "Python", level: 75 },
     { name: "Node.js", level: 70 },
     { name: "MySQL", level: 75 },
-    { name: "Git/GitHub", level: 85 },
+    { name: "MongoDb", level: 75 },
+    { name: "Git/GitHub", level: 80 },
     { name: "Java", level: 70 }
   ],
   soft: [
-    { name: "Communication", icon: "MessageSquare" },
     { name: "Teamwork", icon: "Users" },
     { name: "Problem Solving", icon: "Lightbulb" },
+    { name: "Communication", icon: "MessageSquare" },
     { name: "Adaptability", icon: "RefreshCw" },
     { name: "Time Management", icon: "Clock" },
     { name: "Critical Thinking", icon: "Brain" }
@@ -50,49 +51,51 @@ export const skillsData = {
 export const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Web Application",
-    description: "A full-stack e-commerce platform with product listings, cart functionality, and secure checkout. Implemented responsive design and user authentication.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    title: "Teamacy Website",
+    description: "A collaborative team management platform for organizing projects, assigning tasks, and tracking progress in one place.",
+    technologies: ["React", "FastAPI", "MongoDB", "REST API"],
     role: "Full Stack Developer",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    github: "https://github.com/Sabarinathan-git",
-    live: "#"
+    image: "/photos/teamacy.jpeg",
+    github: "https://github.com/Dhinesh-2005t",
+    live: "https://www.teamacy.in"
   },
-  {
+   {
     id: 2,
-    title: "Weather Forecast App",
-    description: "A weather application that fetches real-time weather data using APIs. Features include location-based forecasts and 5-day predictions.",
-    technologies: ["JavaScript", "HTML", "CSS", "REST API"],
-    role: "Frontend Developer",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
-    github: "https://github.com/Sabarinathan-git",
-    live: "#"
+    title: "Students Result Portal System",
+    description: "A web-based system to publish, view, and manage student examination results securely and efficiently.",
+    technologies: ["React", "FastAPI", "MongoDB", "REST API"],
+    role: "Full Stack Developer",
+    image: "/photos/crp.jpeg",
+    github: "https://github.com/Dhinesh-2005",
+    live: "https://spcet-crp.onrender.com"
   },
   {
     id: 3,
-    title: "Student Management System",
-    description: "A comprehensive system for managing student records, attendance, and grades. Built with Python and MySQL database integration.",
-    technologies: ["Python", "MySQL", "Tkinter"],
-    role: "Backend Developer & Tester",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
-    github: "https://github.com/Sabarinathan-git",
-    live: "#"
+    title: "NKS Website",
+    description: "A responsive website designed to showcase services, content, and contact details with a clean and modern UI.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    role: "Frontend Developer",
+    image: "/photos/nks.jpeg",
+    github: "https://github.com/Dhinesh-2005",
+    live: "https://nkswebsite.onrender.com"
   }
+ 
 ];
 
 export const experienceData = [
   {
     id: 1,
-    company: "Tech Solutions Pvt Ltd",
-    role: "Web Development Intern",
-    duration: "June 2024 - August 2024",
+    company: "Teamacy",
+    role: "Full Stack Web Developer",
+    duration: "January 2026 - Present",
     responsibilities: [
-      "Developed and maintained responsive web pages using HTML, CSS, and JavaScript",
-      "Collaborated with the design team to implement UI/UX improvements",
-      "Participated in code reviews and implemented feedback for quality assurance",
-      "Assisted in debugging and testing web applications"
+      "Designed and developed Teamacy, a full-stack team collaboration web application from scratch.",
+      "Implemented project and task management features with a clean, responsive user interface.",
+      "Built backend APIs using FastAPI and integrated them with MongoDB for data management.",
+      "Handled authentication, API integration, and overall application workflow.",
+      "Deployed and tested the application for real-world usage and performance."
     ]
-  },
+  }/*,
   {
     id: 2,
     company: "Digital Innovation Labs",
@@ -104,36 +107,36 @@ export const experienceData = [
       "Created test cases and test plans for new features",
       "Worked closely with developers to ensure software quality"
     ]
-  }
+  }*/
 ];
 
 export const certificationsData = [
-  {
+   {
     id: 1,
-    name: "Full Stack Web Development",
-    platform: "Coursera",
-    date: "2024",
+    name: "Python for Data Science",
+    platform: ["NPTEL ," , " Pantech e Learning"],
+    date: "2025",
     icon: "Award"
   },
   {
     id: 2,
-    name: "Python for Data Science",
-    platform: "IBM",
-    date: "2024",
+    name: "Full Stack Web Development",
+    platform: ["NoviTech R&D Pvt. Ltd ," , " Simplilearn SkillUP"],
+    date: "2024 - 2025",
     icon: "Award"
   },
   {
     id: 3,
-    name: "JavaScript Algorithms",
-    platform: "freeCodeCamp",
-    date: "2023",
+    name: "Artificial Intelligence Fundamentals",
+    platform: "IBM SkillsBuild",
+    date: "2025",
     icon: "Award"
   },
   {
     id: 4,
-    name: "Git & GitHub Fundamentals",
-    platform: "LinkedIn Learning",
-    date: "2023",
+    name: "Cybersecurity Fundamentals",
+    platform: "IBM SkillsBuild",
+    date: "2025",
     icon: "Award"
   }
 ];
@@ -143,14 +146,14 @@ export const educationData = [
     id: 1,
     degree: "B.Tech - Information Technology",
     institution: "St. Peter's College of Engineering and Technology",
-    duration: "2022 - 2026",
+    duration: "2023 - 2027",
     description: "Currently pursuing Bachelor's degree in Information Technology with focus on software development, database management, and emerging technologies."
   },
   {
     id: 2,
     degree: "Higher Secondary Education",
-    institution: "Government Higher Secondary School",
-    duration: "2020 - 2022",
+    institution: "Ebenezer Jaganath Marcus Matriculation Higher Secondary School",
+    duration: "2021 - 2023",
     description: "Completed higher secondary education with Computer Science as major subject."
   }
 ];

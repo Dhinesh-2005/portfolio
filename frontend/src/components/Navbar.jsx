@@ -45,7 +45,7 @@ const Navbar = () => {
             className="text-xl md:text-2xl font-bold text-white"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-red-600">S</span>abari
+            <span className="text-red-600">D</span>hinesh
           </motion.a>
 
           {/* Desktop Navigation */}

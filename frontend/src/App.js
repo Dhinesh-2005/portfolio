@@ -15,7 +15,7 @@ import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
 import CertificationsSection from './components/CertificationsSection';
 import EducationSection from './components/EducationSection';
-import AchievementsSection from './components/AchievementsSection';
+/*import AchievementsSection from './components/AchievementsSection';*/
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -37,7 +37,7 @@ function App() {
         <ExperienceSection />
         <CertificationsSection />
         <EducationSection />
-        <AchievementsSection />
+        
         <ContactSection />
       </main>
       

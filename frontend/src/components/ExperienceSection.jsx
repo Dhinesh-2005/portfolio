@@ -23,7 +23,7 @@ const ExperienceSection = () => {
           </h2>
           <div className="w-20 h-1 bg-red-700 mx-auto rounded-full" />
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            My professional journey and internship experiences
+            My professional journey experiences
           </p>
         </motion.div>
 
