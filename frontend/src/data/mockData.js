@@ -56,7 +56,7 @@ export const projectsData = [
     technologies: ["React", "FastAPI", "MongoDB", "REST API"],
     role: "Full Stack Developer",
     image: "/photos/teamacy.jpeg",
-    github: "https://github.com/Dhinesh-2005t",
+    github: "https://github.com/Dhinesh-2005",
     live: "https://www.teamacy.in"
   },
    {
