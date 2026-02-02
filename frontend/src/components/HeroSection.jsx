@@ -147,11 +147,13 @@ const HeroSection = () => {
             <div className="relative">
               {/* Decorative ring */}
               <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-0 rounded-full border-2 border-dashed border-red-700/30"
-                style={{ width: '320px', height: '320px', top: '-10px', left: '-10px' }}
+              animate={{ rotate: 360 }}
+              transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
+              className="absolute rounded-full border-2 border-dashed border-red-700/30
+              w-[320px] h-[320px] md:w-[340px] md:h-[340px]
+              top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               />
+
               
               {/* Image container */}
               <div className="relative w-[280px] h-[280px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-red-700/20 shadow-2xl shadow-red-900/20">
