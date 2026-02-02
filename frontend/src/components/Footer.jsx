@@ -34,14 +34,14 @@ const Footer = () => {
             className="text-2xl font-bold text-white mb-6"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-teal-400">S</span>abari
+            <span className="text-red-600">S</span>abari
           </motion.a>
 
           {/* Resume Button */}
           <Button
             variant="outline"
             size="sm"
-            className="mb-6 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400"
+            className="mb-6 border-red-700/50 text-red-500 hover:bg-red-700/10 hover:border-red-600"
             onClick={() => window.open(profileData.resumeUrl, '_blank')}
           >
             <Download className="w-4 h-4 mr-2" />
@@ -57,7 +57,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="p-3 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-teal-400/50 transition-all"
+                className="p-3 rounded-lg bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-red-700/50 transition-all"
                 aria-label={social.label}
               >
                 <social.icon className="w-5 h-5" />
@@ -68,7 +68,7 @@ const Footer = () => {
           {/* Copyright */}
           <p className="text-gray-500 text-sm text-center flex items-center gap-1">
             © {currentYear} {profileData.name}. Made with
-            <Heart className="w-4 h-4 text-teal-400 inline-block mx-1" fill="currentColor" />
+            <Heart className="w-4 h-4 text-red-600 inline-block mx-1" fill="currentColor" />
             All rights reserved.
           </p>
         </div>
@@ -80,7 +80,7 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         whileHover={{ y: -5, transition: { duration: 0.2 } }}
-        className="fixed bottom-8 right-8 p-3 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-500/30 hover:bg-teal-600 transition-colors z-50"
+        className="fixed bottom-8 right-8 p-3 rounded-lg bg-red-700 text-white shadow-lg shadow-red-900/30 hover:bg-red-800 transition-all duration-300 z-50"
         aria-label="Scroll to top"
       >
         <ArrowUp className="w-5 h-5" />

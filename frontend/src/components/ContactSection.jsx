@@ -68,7 +68,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 md:py-32 relative">
       {/* Background accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-teal-500/5 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-900/5 to-transparent" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -79,10 +79,10 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Get In <span className="text-teal-400">Touch</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+            Get In <span className="text-red-600">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-teal-400 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-red-700 mx-auto rounded-full" />
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
             Feel free to reach out for collaborations, opportunities, or just a friendly chat
           </p>
@@ -107,17 +107,17 @@ const ContactSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.4 }}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-teal-400/30 transition-colors"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-red-700/40 transition-all duration-300 shadow-lg shadow-black/20"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-teal-400/10 flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-teal-400" />
+                  <div className="w-12 h-12 rounded-lg bg-red-700/10 flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-red-500" />
                   </div>
                   <div>
                     <span className="text-gray-400 text-sm block">{item.label}</span>
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-white hover:text-teal-400 transition-colors"
+                        className="text-white hover:text-red-400 transition-colors"
                       >
                         {item.value}
                       </a>
@@ -144,7 +144,7 @@ const ContactSection = () => {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1, duration: 0.3 }}
                     whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                    className="p-4 rounded-xl bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-teal-400/30 hover:bg-teal-400/10 transition-all"
+                    className="p-4 rounded-xl bg-[#141414] border border-white/10 text-gray-400 hover:text-white hover:border-red-700/40 hover:bg-red-700/10 transition-all shadow-lg shadow-black/20"
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5" />
@@ -172,7 +172,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your name"
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-teal-400/50 focus:ring-teal-400/20"
+                  className="bg-[#141414] border-white/10 text-white placeholder:text-gray-500 focus:border-red-600/50 focus:ring-red-600/20"
                 />
               </div>
 
@@ -186,7 +186,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your.email@example.com"
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-teal-400/50 focus:ring-teal-400/20"
+                  className="bg-[#141414] border-white/10 text-white placeholder:text-gray-500 focus:border-red-600/50 focus:ring-red-600/20"
                 />
               </div>
 
@@ -200,14 +200,14 @@ const ContactSection = () => {
                   onChange={handleChange}
                   placeholder="Your message..."
                   rows={5}
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-teal-400/50 focus:ring-teal-400/20 resize-none"
+                  className="bg-[#141414] border-white/10 text-white placeholder:text-gray-500 focus:border-red-600/50 focus:ring-red-600/20 resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white font-medium py-3 disabled:opacity-50"
+                className="w-full bg-red-700 hover:bg-red-800 text-white font-medium py-3 disabled:opacity-50 transition-all duration-300"
               >
                 {isSubmitting ? (
                   <span className="flex items-center justify-center gap-2">
@@ -230,7 +230,7 @@ const ContactSection = () => {
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-teal-400 text-center"
+                  className="text-red-400 text-center"
                 >
                   Message sent successfully! I'll get back to you soon.
                 </motion.p>

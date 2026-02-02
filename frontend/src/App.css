@@ -10,7 +10,7 @@
 }
 
 .App-header {
-    background-color: #0f0f10;
+    background-color: #0a0a0b;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .App-link {
-    color: #61dafb;
+    color: #dc2626;
 }
 
 @keyframes App-logo-spin {
@@ -48,17 +48,17 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1a1a1b;
+    background: #1f1f1f;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #2a2a2b;
+    background: #2a2a2a;
 }
 
 /* Selection color */
 ::selection {
-    background: rgba(20, 184, 166, 0.3);
+    background: rgba(185, 28, 28, 0.3);
     color: white;
 }
 
