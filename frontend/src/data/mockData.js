@@ -68,9 +68,20 @@ export const projectsData = [
     image: "/photos/crp.jpeg",
     github: "https://github.com/Dhinesh-2005",
     live: "https://spcet-crp.onrender.com"
-  },
+  }
+  ,
   {
     id: 3,
+    title: "PowerPulse-GYM",
+    description: "A responsive website designed to showcase services, content, and contact details with a clean and modern UI.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    role: "Frontend Developer",
+    image: "/photos/powerpulse.png",
+    github: "https://github.com/Dhinesh-2005",
+    live: "https://powerpulse-gym.onrender.com"
+  },
+  {
+    id: 4,
     title: "NKS Website",
     description: "A responsive website designed to showcase services, content, and contact details with a clean and modern UI.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
