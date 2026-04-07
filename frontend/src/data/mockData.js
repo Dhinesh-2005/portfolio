@@ -98,7 +98,7 @@ export const experienceData = [
     id: 1,
     company: "Teamacy",
     role: "Full Stack Web Developer",
-    duration: "January 2026 - Present",
+    duration: "January 2026 - March 2026",
     responsibilities: [
       "Designed and developed Teamacy, a full-stack team collaboration web application from scratch.",
       "Implemented project and task management features with a clean, responsive user interface.",
