@@ -73,7 +73,7 @@ export const projectsData = [
   {
     id: 3,
     title: "PowerPulse-GYM",
-    description: "A responsive website designed to showcase services, content, and contact details with a clean and modern UI.",
+    description: "Built a modern and responsive fitness website using React, Vite, and Tailwind CSS with an engaging UI and dynamic workout-focused design.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     role: "Frontend Developer",
     image: "/photos/powerpulse.png",
@@ -82,6 +82,16 @@ export const projectsData = [
   },
   {
     id: 4,
+    title: "EliteCare",
+    description: "Built a modern, responsive dental clinic website using React, Vite, and Tailwind CSS with a premium UI and multi-page navigation.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    role: "Frontend Developer",
+    image: "/photos/Elitecare.png",
+    github: "https://github.com/Dhinesh-2005",
+    live: "https://elitecare.onrender.com"
+  },
+  {
+    id: 5,
     title: "NKS Website",
     description: "A responsive website designed to showcase services, content, and contact details with a clean and modern UI.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
