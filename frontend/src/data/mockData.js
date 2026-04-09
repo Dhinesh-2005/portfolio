@@ -88,7 +88,7 @@ export const projectsData = [
     role: "Frontend Developer",
     image: "/photos/Elitecare.png",
     github: "https://github.com/Dhinesh-2005",
-    live: "https://elitecare.onrender.com"
+    live: "https://elite-care.onrender.com"
   },
   {
     id: 5,
