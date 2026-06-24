@@ -59,7 +59,7 @@ export const projectsData = [
     github: "https://github.com/Dhinesh-2005",
     live: "https://www.teamacy.in"
   },
-   {
+  {
     id: 2,
     title: "Students Result Portal System",
     description: "A web-based system to publish, view, and manage student examination results securely and efficiently.",
@@ -99,8 +99,18 @@ export const projectsData = [
     image: "/photos/nks.jpeg",
     github: "https://github.com/Dhinesh-2005",
     live: "https://nkswebsite.onrender.com"
+  },
+  {
+    id: 6,
+    title: "Engagement Website",
+    description: "Built a responsive and interactive digital invitation website using React, HTML, CSS, and JavaScript.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    role: "Developer",
+    image: "/photos/invite.png",
+    github: "https://github.com/Dhinesh-2005",
+    live: "https://invitation-8yro.onrender.com/"
   }
- 
+
 ];
 
 export const experienceData = [
