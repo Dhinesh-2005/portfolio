@@ -126,19 +126,19 @@ export const experienceData = [
       "Handled authentication, API integration, and overall application workflow.",
       "Deployed and tested the application for real-world usage and performance."
     ]
-  }/*,
+  },
   {
-    id: 2,
-    company: "Digital Innovation Labs",
-    role: "Software Testing Intern",
-    duration: "January 2024 - March 2024",
-    responsibilities: [
-      "Executed manual testing procedures for web and mobile applications",
-      "Documented and reported bugs using issue tracking tools",
-      "Created test cases and test plans for new features",
-      "Worked closely with developers to ensure software quality"
-    ]
-  }*/
+  id: 2,
+  company: "MYME TECHIES",
+  role: "Full Stack Intern Trainer",
+  duration: "June 2026 (30 Days)",
+  responsibilities: [
+    "Conducted training sessions on Full Stack Web Development for students",
+    "Taught HTML, CSS, JavaScript, React, Node.js, and database fundamentals",
+    "Guided students through hands-on projects and coding exercises",
+    "Provided mentorship, code reviews, and technical support to improve learning outcomes"
+  ]
+}
 ];
 
 export const certificationsData = [
