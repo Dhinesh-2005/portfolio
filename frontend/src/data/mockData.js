@@ -131,14 +131,14 @@ export const experienceData = [
   id: 2,
   company: "MYME TECHIES",
   role: "Full Stack Intern Trainer",
-  duration: "June 2026 (30 Days)",
+  duration: "1 June 2026 - 30 June 2026",
   responsibilities: [
-    "Conducted training sessions on Full Stack Web Development for students",
+    "Conducted Full Stack Web Development training sessions for students",
     "Taught HTML, CSS, JavaScript, React, Node.js, and database fundamentals",
-    "Guided students through hands-on projects and coding exercises",
-    "Provided mentorship, code reviews, and technical support to improve learning outcomes"
+    "Guided students in building hands-on projects and real-world applications",
+    "Provided mentorship, code reviews, and technical support to enhance learning outcomes"
   ]
-}
+  }
 ];
 
 export const certificationsData = [
