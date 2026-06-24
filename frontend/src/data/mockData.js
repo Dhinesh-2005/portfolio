@@ -118,7 +118,7 @@ export const experienceData = [
     id: 1,
     company: "Teamacy",
     role: "Full Stack Web Developer",
-    duration: "January 2026 - March 2026",
+    duration: "January 2026 - Present",
     responsibilities: [
       "Designed and developed Teamacy, a full-stack team collaboration web application from scratch.",
       "Implemented project and task management features with a clean, responsive user interface.",
@@ -142,7 +142,7 @@ export const experienceData = [
 ];
 
 export const certificationsData = [
-   {
+  {
     id: 1,
     name: "Python for Data Science",
     platform: ["NPTEL ," , " Pantech e Learning"],
