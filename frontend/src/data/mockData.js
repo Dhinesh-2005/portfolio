@@ -129,6 +129,20 @@ export const experienceData = [
   },
   {
   id: 2,
+  company: "Marca Rise",
+  role: "Full Stack Web Developer",
+  duration: "April 2026 - Present",
+  responsibilities: [
+  "Developing and maintaining full-stack web applications using modern frontend and backend technologies.",
+  "Designing responsive, user-friendly interfaces with a focus on performance and accessibility.",
+  "Building secure RESTful APIs and integrating databases for efficient data management.",
+  "Collaborating with designers and team members to implement new features and improve existing applications.",
+  "Optimizing application performance, debugging issues, and ensuring code quality through testing and best practices.",
+  "Participating in deployment, maintenance, and continuous enhancement of production applications."
+]
+  },
+  {
+  id: 3,
   company: "MYME TECHIES",
   role: "Full Stack Intern Trainer",
   duration: "1 June 2026 - 30 June 2026",
