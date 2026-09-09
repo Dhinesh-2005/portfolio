@@ -8,6 +8,7 @@ import '@fontsource/inter/700.css';
 // Components
 import Navbar from './components/Navbar';
 import FloatingIcons from './components/FloatingIcons';
+import CustomCursor from './components/CustomCursor';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
@@ -22,6 +23,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0b] text-white font-sans overflow-x-hidden">
+      {/* Custom Fluid Glowing Cursor */}
+      <CustomCursor />
+
       {/* Floating Background Icons */}
       <FloatingIcons />
       

@@ -160,16 +160,24 @@ const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Profile Image with Ambient Aura */}
+          {/* Right Content - Profile Image with Ambient Aura and Gentle Float */}
           <motion.div
             initial={{ opacity: 0, scale: 0.94, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
             className="flex-1 flex justify-center lg:justify-end"
           >
-            <div className="relative group">
-              {/* Outer Ambient Breathing Glow */}
-              <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-red-600/25 via-red-700/10 to-transparent blur-xl transition-all duration-700 group-hover:scale-105 group-hover:from-red-600/35" />
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              className="relative group"
+            >
+              {/* Animated Glowing Ring Aura */}
+              <motion.div
+                animate={{ scale: [1, 1.06, 1], opacity: [0.45, 0.75, 0.45] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute -inset-4 rounded-full bg-gradient-to-tr from-red-600/30 via-red-700/15 to-transparent blur-2xl pointer-events-none"
+              />
 
               {/* Decorative Accent Ring */}
               <div className="relative p-1.5 rounded-full bg-gradient-to-b from-red-600/50 via-red-900/30 to-white/10 shadow-2xl shadow-red-950/60">
@@ -178,7 +186,7 @@ const HeroSection = () => {
                   <img
                     src={profileData.profileImage}
                     alt={profileData.name}
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   {/* Subtle edge shadow inside circle */}
                   <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-black/30 pointer-events-none" />
@@ -187,8 +195,8 @@ const HeroSection = () => {
 
               {/* Floating Badge */}
               <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+                animate={{ y: [0, -4, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -bottom-2 -right-2 sm:bottom-0 sm:right-0 bg-[#121214]/95 backdrop-blur-md border border-red-600/40 rounded-xl px-4 py-2 shadow-xl shadow-black/60 flex items-center gap-2.5"
               >
                 <div className="relative flex items-center justify-center w-2.5 h-2.5">
@@ -197,7 +205,7 @@ const HeroSection = () => {
                 </div>
                 <span className="text-xs sm:text-sm font-semibold text-gray-100">IT Student</span>
               </motion.div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
