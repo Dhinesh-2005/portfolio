@@ -14,40 +14,40 @@ const techIcons = [
 
 const FloatingIcons = () => {
   const iconPositions = [
-    { top: '10%', left: '5%' },
-    { top: '15%', right: '10%' },
-    { top: '40%', left: '3%' },
-    { top: '60%', right: '5%' },
-    { top: '75%', left: '8%' },
-    { top: '25%', right: '3%' },
-    { top: '50%', left: '92%' },
-    { top: '85%', right: '12%' }
+    { top: '12%', left: '4%' },
+    { top: '18%', right: '8%' },
+    { top: '38%', left: '3%' },
+    { top: '58%', right: '4%' },
+    { top: '78%', left: '6%' },
+    { top: '28%', right: '3%' },
+    { top: '48%', left: '94%' },
+    { top: '88%', right: '10%' }
   ];
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden z-0 select-none">
       {techIcons.map((icon, index) => (
         <motion.div
           key={icon.name}
-          className="absolute opacity-[0.08]"
+          className="absolute opacity-[0.04] md:opacity-[0.06] transition-opacity duration-500"
           style={iconPositions[index % iconPositions.length]}
           animate={{
-            y: [0, -15, 0],
-            rotate: [0, 3, -3, 0],
+            y: [0, -14, 0],
+            rotate: [0, 4, -4, 0],
           }}
           transition={{
-            duration: 8 + index,
+            duration: 9 + index * 1.2,
             repeat: Infinity,
             ease: 'easeInOut',
-            delay: index * 0.7,
+            delay: index * 0.5,
           }}
         >
           <svg
-            width="40"
-            height="40"
+            width="38"
+            height="38"
             viewBox="0 0 24 24"
             fill={icon.color}
-            className="md:w-12 md:h-12"
+            className="md:w-11 md:h-11"
           >
             <path d={icon.path} />
           </svg>
